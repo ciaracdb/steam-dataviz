@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steam Data Visualization</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/javascripts/steamapi.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body>
+<section>
+    <svg>
+
+        <defs>
+            <radialGradient id="blueCircle"
+                            gradientUnits="objectBoundingBox" fx="30%" fy="30%">
+                <stop offset="0%" style="stop-color:#FFFFFF"></stop>
+                <stop offset="40%" style="stop-color:#0000AA"></stop>
+                <stop offset="100%" style="stop-color:#000066"></stop>
+            </radialGradient>
+
+        </defs>
+
+        <g>
+            <circle id="3DBlueCircle" cx="50" cy="50" r="40" fill="url(#blueCircle)"></circle>
+        </g>
+
+    </svg>
+</section>
+
+</body>
+</html>
